@@ -1,0 +1,13 @@
+{
+  "name": "@dfreeman/semantic-release-playground",
+  "version": "0.0.0-development",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "dfreeman/semantic-release-playground",
+  "scripts": {
+    "test": "true"
+  },
+  "devDependencies": {
+    "semantic-release": "^15.9.15"
+  }
+}

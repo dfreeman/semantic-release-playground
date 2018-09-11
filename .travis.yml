@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - 10
+cache:
+  yarn: true
+jobs:
+  include:
+    - stage: Tests
+      env: TEST_NUMBER=1
+    - env: TEST_NUMBER=2
+    - stage: Release
+      script: yarn semantic-release
+script:
+  - yarn test
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
